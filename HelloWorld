@@ -1,0 +1,16 @@
+//@Kekkai Sensen reference
+/*
+ * Joe smells extra like cheese
+ * please help I'm dying from sleep deprivation
+ */
+/**
+ * This is a java doc comment. This is used for formal documentation and goes into
+ * an html page when you publish your project
+ */
+public class HelloWorld
+{
+    public static void main(String[] args) //Joe smells like cheese
+    {
+        System.out.println("Hello doumo boku wa koko"); //this prints the text in quotes
+    }
+}
