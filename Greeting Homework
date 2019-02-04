@@ -1,0 +1,27 @@
+import java.util. Scanner;
+/**
+ * Write a description of your class here.
+ * 
+ */
+
+public class GreetingHomework
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        
+        System.out.println("Enter your name : ");
+        
+        String name = in.nextLine();
+        
+        System.out.println("Enter the day : ");
+        
+        String day = in.nextLine();
+        
+        System.out.println("Enter the date : ");
+        
+        String date = in.nextLine();
+        
+        System.out.println("Hello, " + name + ", today is " + day + " and the date is " + date);
+    }
+}
