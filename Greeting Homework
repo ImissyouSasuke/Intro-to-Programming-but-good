@@ -1,6 +1,6 @@
 import java.util. Scanner;
 /**
- * Write a description of your class here.
+ * Christian D'Alotto here, we got a bot that greets you now
  * 
  */
 
@@ -8,11 +8,11 @@ public class GreetingHomework
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in); //If I don't have this the entire thing dies
         
         System.out.println("Enter your name : ");
         
-        String name = in.nextLine();
+        String name = in.nextLine(); //We add these to give prompts and stuff
         
         System.out.println("Enter the day : ");
         
@@ -20,7 +20,7 @@ public class GreetingHomework
         
         System.out.println("Enter the date : ");
         
-        String date = in.nextLine();
+        String date = in.nextLine(); //Next thing is the true fruits of my loins
         
         System.out.println("Hello, " + name + ", today is " + day + " and the date is " + date);
     }
