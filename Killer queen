@@ -1,0 +1,37 @@
+
+/**
+ * Write a description of your class here.
+ * 
+ */
+
+public class Homework
+{
+    public static void main(String[] args)
+    {
+        System.out.println("MMMMMMMMMMMMMMMNdddNy/sdNMMMMMMMMMMMMMMMMMMMMMMMMM");
+        System.out.println("MMMMMMMMMMMMMMMMMMMMNdhyddmMMMMMMMMMMMMMMMMMMMMMMM");
+        System.out.println("MMMMMMMNhdMMMMMMMMMMMMy:sds/yMMMMMMMMMMMMMMMMMMMMM");
+        System.out.println("MMMMMMh+:-.omMMMMMMMMMNNd-.../mMMMMMMMMMMMMMMMMMMM");
+        System.out.println("MMy++/...`.`+yMMMMMMMmdho+++:-//dMMMMMMMMMMMMMMMMM");
+        System.out.println("MMMyy:..:o:``-oMMNhy::://-/oys/:/MMMMMMMMMMMMMMMMM");
+        System.out.println("MMMyy:..:o:``-oMMNhy::://-/oys/:/MMMMMMMMMMMMMMMMM");
+        System.out.println("MMMMMMhsooo+/`/ooy+`.o/:/o:/mdNmdsMMMMMMMMMMMMMMMM");
+        System.out.println("MMMMMMMMy++//..-..`-oyyoo+sssmmmh:hMMMMMMMMMMMMMMM");
+        System.out.println("MMMMMMMMm:-`../:++ossooys/.`.+NymyhmMMMMMMMMMMMMMM");
+        System.out.println("MMMMMMMMM+.``-+osys+/+oyo::o+-/mNdoshMMMMMMMMMMMMM");
+        System.out.println("MMMMMMMNdo-````-+y:.+:::./oo//oomdysddmMMMMMMMMMMM");
+        System.out.println("MMMMMMMMMs+.```:/y--+`.```:/s/-o/dmmdmNNNMMMMMMMMM");
+        System.out.println("MMMMMMMMMMmds+:/oyhyh//.``-/s+/y+mMMNMMMMMMMMMMMMM");
+        System.out.println("MMMMMMMMMMMMMMMMMMMMN+://`-++..o/dMMMNMMMMMMMMMMMM");
+        System.out.println("MMMMMMMMMMMMMMMMMMMM+.-/+//y+:os/+NMMMMMMMMMMMMMMM");
+        System.out.println("MMMMMMMMMMMMMMMMMMmhhdddhhysssossohMMMMMMMMMMMMMMM");
+        System.out.println("MMMMMMMMMMMMMMMNNdmmdddddmmmhhyshdddNmMMMMMMMMMMMM");
+        System.out.println("MMMMMMMMMMMMMMMmhshmhdhddmmmhysymmmhdo+oymMMMMMMMM");
+        System.out.println("MMMMMMMMMMMMMm+.``:oshdmmdmy+s+oomdms/:-.`./sNMMMM");
+        System.out.println("MMMMMMMMMMMm/``.::---/+yhdhoyy++sdh:..-:+/:.``/hMM");
+        System.out.println("MMMMMMMMMMs```-:````./osymh+syoss+/`````.-/++-``-s");
+        System.out.println("MMMMMMMMM+``./-````.+sydMMMyoosdho+:.......:/s/`.-");
+        System.out.println("MMMMMMMMo``.+-`.-:+oydMMMMMMMNMMMMNdhyyyyyhyyyyo+/");
+        System.out.println("MMMMMMMo``.osoooshmNMMMMMMMMMMMMMMMMMMMMMMMMMmyo+y");
+    }
+}
