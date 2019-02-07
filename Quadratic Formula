@@ -8,16 +8,16 @@ public class Quadratic
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Hello user! I am here to help you calculate the quadratic formula!");
+        Scanner in = new Scanner(System.in);//This is a necessary line
+        System.out.println("Hello user! I am here to help you calculate the quadratic formula!");//Polite greetings are important
         System.out.println("Please enter a value for a : ");
         double a = in.nextDouble();
         System.out.println("Please enter a value for b : ");
         double b = in.nextDouble();
         System.out.println("Please enter a value for c ");
         double c = in.nextDouble();
-        System.out.println("Your two values are : ");
-        System.out.println("Positive value : " + ((-b + Math.sqrt(Math.pow(b,2) - (4*a*c)))/(2*a)));
-        System.out.println("Negative value : " + ((-b - Math.sqrt(Math.pow(b,2) - (4*a*c)))/(2*a)));
+        System.out.println("Your two values are : ");//This is to clarify what the next two lines are
+        System.out.println("Positive value : " + ((-b + Math.sqrt(Math.pow(b,2) - (4*a*c)))/(2*a)));//Since the quadratic formula has + or - values
+        System.out.println("Negative value : " + ((-b - Math.sqrt(Math.pow(b,2) - (4*a*c)))/(2*a)));//This gives not only both x values, but clarifies which function they apply to
     }
 }
