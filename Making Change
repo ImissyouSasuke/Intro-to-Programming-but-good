@@ -1,0 +1,40 @@
+import java.util.Scanner;
+/**
+ * We makin change lads
+ * 
+ */
+
+public class MakeChange
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Hey man, give me a dollar amount: ");
+        int dollars = in.nextInt();
+        System.out.println("Aight now gimme some coins. How many cents: ");
+        int cents = in.nextInt();
+        int numTwenties = dollars / 20;
+        int afterTwenties = dollars % 20;
+        int numTens = afterTwenties / 10;
+        int afterTens = afterTwenties % 10;
+        int numFives = afterTens / 5;
+        int afterFives = afterTens % 5;
+        int numOnes = afterFives / 1;
+        int numQuarters = cents / 25;
+        int afterQuarters = cents % 25;
+        int numDimes = afterQuarters / 10;
+        int afterDimes = afterQuarters % 10;
+        int numNickels = afterDimes / 5;
+        int afterNickels = afterDimes % 5;
+        int numPennies = afterNickels / 1;
+        System.out.println("Your change is:");
+        System.out.println(numTwenties +" Twenties");
+        System.out.println(numTens +" Tens");
+        System.out.println(numFives +" Fives");
+        System.out.println(numOnes +" Ones");
+        System.out.println(numQuarters +" Quarters");
+        System.out.println(numDimes +" Dimes");
+        System.out.println(numNickels +" Nickels");
+        System.out.println(numPennies +" Pennies");
+    }
+}
