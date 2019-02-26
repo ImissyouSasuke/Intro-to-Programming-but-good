@@ -17,6 +17,8 @@ public class Madlib
         String color = in.nextLine();
         System.out.println("Perfect, next I need one of them sweet, sweet verbs: ");
         String verb1 = in.nextLine();
+        System.out.println("That was pretty epic, hit me up with a number now: ");
+        int number = in.nextInt();
         System.out.println("Oh yeah that was good, gimme another verb, those things are great: ");
         String verb2 = in.nextLine();
         System.out.println("Ok now I'm feeling a little spicy for this last one. Imma need the spiciest adverb you got: ");
@@ -26,13 +28,13 @@ public class Madlib
         System.out.println("had skin. That they grew themselves. Not stolen. Anyway, " + properNoun1);
         System.out.println("decided that they were pretty f***ing hungry, so they went to");
         System.out.println("The finest establishment in town. Waffle House. They ran there as");
-        System.out.println(adverb + " as they could, even going so far as to " + verb1 + " on the way there.");
+        System.out.println(adverb + " as they could, even going so far as to " + verb1 + " a whole " + number + " times on the way there.");
         System.out.println("That's how hungry they were. When they arrived at Waffle House, they");
         System.out.println("came to a horrifying discovery. This was not a Waffle House. This was");
         System.out.println("in fact a " + color + " " + properNoun2 + " establishment. " + properNoun1 + " looked in terror. Their only option");
         System.out.println("was to " + verb2 + "," + verb2 + " as much as they could, until the sheer force");
         System.out.println("caused the establishment to be deleted from existence, returning order");
-        System.out.println("to the world of the Waffle Houses.");
+        System.out.println("to the world of the " + (number*5) + " Waffle Houses. Just as god intended.");
         System.out.println("fin");
     }
 }
