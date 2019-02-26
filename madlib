@@ -1,0 +1,38 @@
+import java.util.Scanner;
+/**
+ * My dudes we makin madlibs
+ * 
+ */
+
+public class Madlib
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.println("My pal gimme a Proper noun: ");
+        String properNoun1 = in.nextLine();
+        System.out.println("Alright buddy hit me up with another one of them proper nouns: ");
+        String properNoun2 = in.nextLine();
+        System.out.println("Ok so now that that's done gimme a color: ");
+        String color = in.nextLine();
+        System.out.println("Perfect, next I need one of them sweet, sweet verbs: ");
+        String verb1 = in.nextLine();
+        System.out.println("Oh yeah that was good, gimme another verb, those things are great: ");
+        String verb2 = in.nextLine();
+        System.out.println("Ok now I'm feeling a little spicy for this last one. Imma need the spiciest adverb you got: ");
+        String adverb = in.nextLine();
+        System.out.println("Once upon a time, there was someone who cared. That someone wasn't me.");
+        System.out.println("Anyway, " + properNoun1 + " was a totally real human being. They even");
+        System.out.println("had skin. That they grew themselves. Not stolen. Anyway, " + properNoun1);
+        System.out.println("decided that they were pretty f***ing hungry, so they went to");
+        System.out.println("The finest establishment in town. Waffle House. They ran there as");
+        System.out.println(adverb + " as they could, even going so far as to " + verb1 + " on the way there.");
+        System.out.println("That's how hungry they were. When they arrived at Waffle House, they");
+        System.out.println("came to a horrifying discovery. This was not a Waffle House. This was");
+        System.out.println("in fact a " + color + " " + properNoun2 + " establishment. " + properNoun1 + " looked in terror. Their only option");
+        System.out.println("was to " + verb2 + "," + verb2 + " as much as they could, until the sheer force");
+        System.out.println("caused the establishment to be deleted from existence, returning order");
+        System.out.println("to the world of the Waffle Houses.");
+        System.out.println("fin");
+    }
+}
