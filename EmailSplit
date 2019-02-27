@@ -1,0 +1,23 @@
+import java.util.Scanner;
+/**
+ * Program asks user for an email address and splits it
+ * into the username and domain
+ */
+
+public class EmailSplit
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Please enter and email address ya reprobate");
+        String emailAddress = in.next();//no spaces allowed
+        int loc = emailAddress.indexOf('@');
+        int len = emailAddress.length();//finds lenght of the address
+        
+        //Print the username
+        System.out.println("The username is: " + emailAddress.substring(0, loc));
+        
+        //Print the domain
+        System.out.println("Domain: " + emailAddress.substring(loc + 1));//goes from loc to the end
+    }
+}
