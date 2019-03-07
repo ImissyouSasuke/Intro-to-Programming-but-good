@@ -1,0 +1,19 @@
+import java.util.Scanner;
+/**
+ * Phone numbers are weird
+ * 
+ */
+
+public class Digits
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Ay lemme get yo number");
+        String number = in.nextLine();
+        String firstThree = number.substring(0,3);
+        String secondThree = number.substring(3,6);
+        String lastFour = number.substring(6,10);
+        System.out.println("("+firstThree+") - "+secondThree+" - "+lastFour);
+    }
+}
