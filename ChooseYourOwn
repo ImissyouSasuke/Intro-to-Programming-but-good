@@ -1,0 +1,82 @@
+import java.util.Scanner;
+/**
+ * Template for a pick your own adventure text based game.
+ * 
+ */
+
+public class PickYourOwn
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Do you want to go to school? 1 for yes anything else for no");
+        int choice1 = in.nextInt();
+        if(choice1 == 1)
+        {
+            System.out.println("You went to school, radtacular dude!");
+            System.out.println("Do you want to go to class(1) or hide in the senior cafe and play smash(any other #)");
+            int choice2 = in.nextInt();
+            if(choice2 == 1)
+            {
+                System.out.println("You're now in class. You sit down in English and whip out a computer. Do you actually do your work(1) or do you goof off(any other number)?");
+                int choice31 = in.nextInt();
+                if(choice31 == 1)
+                {
+                    System.out.println("Congrats youre actually being a decent student. Too bad your obsession with lamb chops has led your cholesterol to reach critically dangerous levels. You drop dead on the spot from a heart attack.");
+                }
+                else
+                {
+                    System.out.println("You goof off and decide to play a game on the greatest gaming platform of all time, coolmathgames.com, like any true gamer.");
+                    System.out.println("You are now forced to confront the fact that you are rapidly aging and due to the lack of firsts that come later in life, ");
+                    System.out.println("time is only going to feel like it moves faster. Do you break down due to the existential crisis of your own mortality(1) or just kinda live with it(any other #)");
+                    int choice41 = in.nextInt();
+                    if(choice41 == 1)
+                    {
+                        System.out.println("You break down crying in the middle of class like a child. Have fun contemplating the prospect of your death and how there is no god and that your existence is futile");
+                    }
+                    else
+                    {
+                        System.out.println("Alrighty then. Keep playing Raft Wars I guess");
+                    }
+                }
+            }
+            else
+            {
+                System.out.println("You walk out into the senior cafe and whip out your Switch to boot up Smash. Do you play solo(1) or do you look for a challenger(any other #)");
+                int choice42 = in.nextInt();
+                if(choice42 == 1)
+                {
+                    System.out.println("Damn youre lonely");
+                }
+                else
+                {
+                    System.out.println("Two people walk up to you saying that theyll play with you. One of them says they are fine using a half joycon(1), while the other has brought their own pro controller(Any other #). Who do you choose?");
+                    int challenger = in.nextInt();
+                    if(challenger == 1)
+                    {
+                        System.out.println("You choose the guy who said he wants to play with half joycon. He instalocks Ganondorf and uses nothing but side B until you're pretty sure that ");
+                        System.out.println("the amount of times he has used it is equal to the amount of brain cells he has. He wins and then acts like he is good at the game. He is not.");
+                    }
+                    else
+                    {
+                        System.out.println("You decide to play against the guy with the pro controller, since he seems good and you are in the mood for a challenge.");
+                        System.out.println("Do you decide to pick a high tier character(1) or just go for the character that looks nice(any other number)?");
+                        int character = in.nextInt();
+                        if(character == 1)
+                        {
+                            System.out.println("You decide to pick Marth because he is a strong character. Your opponent chooses Fox and absolutely obliterates you. Congrats he now steals your house and identity. You are a husk.");
+                        }
+                        else
+                        {
+                            System.out.println("You say screw it and choose Pacman. The enemy is overwhelmed by the surprise pick, and his Fox is completely overwhelmed by your epic gamer skills. You win and then he blacks out so you steal his wallet. Epic.");
+                        }
+                    }
+                }
+            }
+        }
+        else
+        {
+            System.out.println("You stayed home like a loser");
+        }
+    }
+}
