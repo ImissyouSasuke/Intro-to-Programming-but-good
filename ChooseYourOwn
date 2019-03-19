@@ -76,7 +76,39 @@ public class PickYourOwn
         }
         else
         {
-            System.out.println("You stayed home like a loser");
+            int howYouDie = (int) (Math.random()*8);
+            if (howYouDie == 1)
+            {
+                System.out.println("You fall down the stairs into your complimentary pit of sharks with lasers that you got for graduating Elementary School.");
+            }
+            else if (howYouDie == 2)
+            {
+                System.out.println("In an attempt to save space in landfills, instead of throwing out your glass, you eat it. You just straight up eat glass. You are now dead^2");
+            }
+            else if (howYouDie == 3)
+            {
+                System.out.println("The bees have come. You have seconds to live.");
+            }
+            else if (howYouDie == 4)
+            {
+                System.out.println("You look outside and see Kirby holding a knife. You have seconds to live.");
+            }
+            else if (howYouDie == 5)
+            {
+                System.out.println("You are now on Santa's naughty list. He has a hit squad heading to your location as you read this.");
+            }
+            else if (howYouDie == 6)
+            {
+                System.out.println("You find Marilyn Manson outside of a Denny's with a katana. You have seconds to live.");
+            }
+            else if (howYouDie == 7)
+            {
+                System.out.println("Eat pant.");               
+            }
+            else if (howYouDie == 8)
+            {
+                System.out.println("The CEO of Blockbuster comes to your house and challenges you to ritual combat. Write your will.");
+            }
         }
     }
 }
