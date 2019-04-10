@@ -1,0 +1,40 @@
+import java.util.Scanner;
+/**
+ * Write a description of your class here.
+ * 
+ */
+
+public class GuessMyInt
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        
+        int correctNum = (int) (Math.random() * 100 + 1);
+        int numTries = 0;
+        
+        System.out.println("Guess a number between 1 and 100 inclusive: ");
+        int guess = in.nextInt();
+        
+        while(guess != correctNum)
+        {
+            numTries++;
+            if(guess > correctNum)
+            {
+                System.out.println("Nope, too high!");
+            }
+            else
+            {
+                System.out.println("Nope, too low.");
+            }
+            System.out.println("Current number of tries: " + numTries);
+            guess = in.nextInt();
+        }
+        numTries++;
+                if(guess == correctNum)
+            {
+                System.out.println("Congrats! That was the correct number.");
+                System.out.println("It took you " + numTries + " tries.");
+            }
+    }
+}
