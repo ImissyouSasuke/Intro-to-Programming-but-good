@@ -1,0 +1,468 @@
+import java.util.Scanner;
+/**
+ * Write a description of your class here.
+ * 
+ */
+
+public class DungeonsAndDragons
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.println("So, you wanna make a D&D character? Fill out the following form!");
+            System.out.println("Manual setup it is! Firstly, what race would you like to play as?");
+            System.out.println("Dragonborn: 1");
+            System.out.println("Dwarf: 2");
+            System.out.println("Elf: 3");
+            System.out.println("Gnome: 4");
+            System.out.println("Half-Elf: 5");
+            System.out.println("Halfling: 6");
+            System.out.println("Half-Orc: 7");
+            System.out.println("Human: 8");
+            System.out.println("Tiefling: 9");
+            int race = in.nextInt();
+            System.out.println("Alright, and what about your class?");
+            System.out.println("Barbarian: 1");
+            System.out.println("Bard: 2");
+            System.out.println("Cleric: 3");
+            System.out.println("Druid: 4");
+            System.out.println("Fighter: 5");
+            System.out.println("Monk: 6");
+            System.out.println("Paladin: 7");
+            System.out.println("Ranger: 8");
+            System.out.println("Rogue: 9");
+            System.out.println("Sorcerer: 10");
+            System.out.println("Warlock: 11");
+            System.out.println("Wizard: 12");
+            int class1 = in.nextInt();           
+        System.out.println("Alright, now we need to make your stat rolls. To do this ");
+        System.out.println("we'll roll 4d6 and drop the lowest number. We'll do this ");
+        System.out.println("6 times, then you'll assign each number you got to the stat you choose.");
+        int number = 1;
+        while(number < 7)
+        {
+            int[]rolls = new int[4];
+            rolls[0]=(int)(Math.random()*6+1);
+            rolls[1]=(int)(Math.random()*6+1);
+            rolls[2]=(int)(Math.random()*6+1);
+            rolls[3]=(int)(Math.random()*6+1);
+            
+            int minRoll = 6;
+            for(int i:rolls)
+            {
+                if(i < minRoll)
+                {
+                    minRoll = i;
+                }
+            }
+            int sum = 0;
+            for(int i:rolls)
+            {
+                sum+=i;
+            }
+            sum-=minRoll;
+            System.out.println(sum);
+            number ++;
+        }
+        System.out.println("So those are your stat rolls, these are the potential stats. Which value would you like to apply to each stat?");
+        int strength = in.nextInt();
+        int dexterity = in.nextInt();
+        int constitution = in.nextInt();
+        int intelligence = in.nextInt();
+        int wisdom = in.nextInt();
+        int charisma = in.nextInt();
+        if(race == 1)
+        {
+            if(class1 == 1)
+            {
+                System.out.println("You are playing a Dragonborn Barbarian, your stats are:");
+                System.out.println("Strength: "+(strength + 2));
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " +(charisma + 1));
+            }
+                       else if(class1 == 2)
+            {
+                System.out.println("You are playing a Dragonborn Bard, your stats are:");
+                System.out.println("Strength: "+(strength + 2));
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " +(charisma + 1));
+            }
+                       else if(class1 == 3)
+            {
+                System.out.println("You are playing a Dragonborn Cleric, your stats are:");
+                System.out.println("Strength: "+(strength + 2));
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " +(charisma + 1));
+            }
+                       else if(class1 == 4)
+            {
+                System.out.println("You are playing a Dragonborn Druid, your stats are:");
+                System.out.println("Strength: "+(strength + 2));
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " +(charisma + 1));
+            }
+            else if(class1 == 5)
+            {
+                System.out.println("You are playing a Dragonborn Fighter, your stats are:");
+                System.out.println("Strength: "+(strength + 2));
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " +(charisma + 1));
+            }
+            else if(class1 == 6)
+            {
+                System.out.println("You are playing a Dragonborn Monk, your stats are:");
+                System.out.println("Strength: "+(strength + 2));
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " +(charisma + 1));
+            }
+            else if(class1 == 7)
+            {
+                System.out.println("You are playing a Dragonborn Paladin, your stats are:");
+                System.out.println("Strength: "+(strength + 2));
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " +(charisma + 1));
+            }
+            else if(class1 == 8)
+            {
+                System.out.println("You are playing a Dragonborn Ranger, your stats are:");
+                System.out.println("Strength: "+(strength + 2));
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " +(charisma + 1));
+            }
+            else if(class1 == 9)
+            {
+                System.out.println("You are playing a Dragonborn Rogue, your stats are:");
+                System.out.println("Strength: "+(strength + 2));
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " +(charisma + 1));
+            }
+            else if(class1 == 10)
+            {
+                System.out.println("You are playing a Dragonborn Sorcerer, your stats are:");
+                System.out.println("Strength: "+(strength + 2));
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " +(charisma + 1));
+            }
+            else if(class1 == 11)
+            {
+                System.out.println("You are playing a Dragonborn Warlock, your stats are:");
+                System.out.println("Strength: "+(strength + 2));
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " +(charisma + 1));
+            }
+            else if(class1 == 12)
+            {
+                System.out.println("You are playing a Dragonborn Wizard, your stats are:");
+                System.out.println("Strength: "+(strength + 2));
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " +(charisma + 1));
+            }
+        }
+        else if(race == 2)
+        {
+            if(class1 == 1)
+            {
+                System.out.println("You are playing a Dwarf Barbarian, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + (constitution+2));
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 2)
+            {
+                System.out.println("You are playing a Dwarf Bard, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + (constitution+2));
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 3)
+            {
+                System.out.println("You are playing a Dwarf Cleric, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + (constitution+2));
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 4)
+            {
+                System.out.println("You are playing a Dwarf Druid, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + (constitution+2));
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 5)
+            {
+                System.out.println("You are playing a Dwarf Fighter, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + (constitution+2));
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 6)
+            {
+                System.out.println("You are playing a Dwarf Monk, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + (constitution+2));
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 7)
+            {
+                System.out.println("You are playing a Dwarf Paladin, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + (constitution+2));
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 8)
+            {
+                System.out.println("You are playing a Dwarf Ranger, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + (constitution+2));
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 9)
+            {
+                System.out.println("You are playing a Dwarf Rogue, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + (constitution+2));
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 10)
+            {
+                System.out.println("You are playing a Dwarf Sorcerer, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + (constitution+2));
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 11)
+            {
+                System.out.println("You are playing a Dwarf Warlock, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + (constitution+2));
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 12)
+            {
+                System.out.println("You are playing a Dwarf Wizard, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + (constitution+2));
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+        }
+        else if(race == 3)
+        {
+            if(class1 == 1)
+            {
+                System.out.println("You are playing a Elf Barbarian, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + (dexterity+2));
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 2)
+            {
+                System.out.println("You are playing a Elf Bard, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + (dexterity+2));
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 3)
+            {
+                System.out.println("You are playing a Elf Cleric, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + (dexterity+2));
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 4)
+            {
+                System.out.println("You are playing a Elf Druid, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + (dexterity+2));
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 5)
+            {
+                System.out.println("You are playing a Elf Fighter, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + (dexterity+2));
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 6)
+            {
+                System.out.println("You are playing a Elf Monk, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + (dexterity+2));
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 7)
+            {
+                System.out.println("You are playing a Elf Paladin, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + (dexterity+2));
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 8)
+            {
+                System.out.println("You are playing a Elf Ranger, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + (dexterity+2));
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 9)
+            {
+                System.out.println("You are playing a Elf Rogue, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + (dexterity+2));
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 10)
+            {
+                System.out.println("You are playing a Elf Sorcerer, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + (dexterity+2));
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 11)
+            {
+                System.out.println("You are playing a Elf Warlock, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + (dexterity+2));
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 12)
+            {
+                System.out.println("You are playing a Elf Wizard, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + (dexterity+2));
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + intelligence);
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+        }
+        else if(race == 4)
+        {
+            if(class1 == 1)
+            {
+                System.out.println("You are playing a Gnome Barbarian, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + (intelligence+2));
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            else if(class1 == 2)
+            {
+                System.out.println("You are playing a Gnome Bard, your stats are:");
+                System.out.println("Strength: "+ strength);
+                System.out.println("Dexterity: " + dexterity);
+                System.out.println("Constitution: " + constitution);
+                System.out.println("Intelligence: " + (intelligence+2));
+                System.out.println("Wisdom: " + wisdom);
+                System.out.println("Charisma: " + charisma);
+            }
+            
+        }
+    }
+}
